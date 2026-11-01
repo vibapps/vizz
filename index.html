@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vızz Sivrisinek Radarı</title>
+<meta name="description" content="Vızz, telefonunun mikrofonuyla sivrisineğin kanat sesini dinler ve onu bulmana yardım eder.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#0b0e19; --card:#161b2a; --text:#e9ecf3; --muted:#9aa3b5; --accent:#ffb547; --line:rgba(255,255,255,.08); }
+  @media (prefers-color-scheme: light) { :root { --bg:#ffffff; --card:#f4f5f8; --text:#151a26; --muted:#5a6273; --accent:#b8700a; --line:rgba(0,0,0,.08); } }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:680px; margin:0 auto; padding:40px 16px 64px; }
+  header { display:flex; gap:16px; align-items:center; margin-bottom:24px; }
+  header img { width:84px; height:84px; border-radius:20px; }
+  h1 { font-size:30px; margin:0; line-height:1.2; }
+  h2 { font-size:19px; margin:36px 0 12px; color:var(--accent); }
+  .muted { color:var(--muted); }
+  details { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 16px; margin:10px 0; }
+  summary { font-weight:600; cursor:pointer; }
+  details p { margin:8px 0 2px; }
+  a { color:var(--accent); }
+  footer { margin-top:48px; font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="Vızz uygulama ikonu">
+    <div>
+      <h1>Vızz</h1>
+      <div class="muted">Sivrisinek radarı</div>
+    </div>
+  </header>
+
+  <p>Vızz, telefonunun mikrofonuyla sivrisineğin kanat sesini dinler ve onu bulmana yardım eder. Gece Modu sen uyurken sessizce sayar, sabah kaç sivrisinek geldiğini gösterir. Ses kaydedilmez, hiçbir veri telefonundan çıkmaz.</p>
+
+  <h2>Sık sorulan sorular</h2>
+
+  <details>
+    <summary>Radar vızıltıyı duymuyor</summary>
+    <p>Sivrisinek ancak birkaç on santimetre yakındayken duyulabilir. Klimayı, vantilatörü ve televizyonu kapat, telefonun alt kenarını (mikrofon) sesin geldiği yöne tut. Profil ekranındaki hassasiyet ayarını artırmayı da deneyebilirsin.</p>
+  </details>
+
+  <details>
+    <summary>Mikrofon izni vermedim, nasıl açarım?</summary>
+    <p>Ayarlar → Vızz → Mikrofon anahtarını aç.</p>
+  </details>
+
+  <details>
+    <summary>Gece Modu telefon kilitliyken çalışıyor mu?</summary>
+    <p>Evet. Başlattıktan sonra telefonu kilitleyebilirsin. Dinleme sürdüğü sürece ekranın üstünde turuncu mikrofon göstergesi görünür. Sabah uygulamayı açıp "Günaydın"a bastığında dinleme durur ve rapor açılır. Gece boyunca dinlemek pil harcadığı için telefonu şarja takmanı öneririz.</p>
+  </details>
+
+  <details>
+    <summary>Rapordaki "en az 2 sivrisinek" nasıl hesaplanıyor?</summary>
+    <p>Her sivrisineğin kanat sesi kendine özgü bir perdede çıkar. Vızz gece duyduğu vızıltıları perdelerine göre gruplar ve belirgin farklı her grubu ayrı bir sivrisinek sayar. Aynı perdedeki iki sivrisinek tek sayılabileceği için bu bir alt sınırdır.</p>
+  </details>
+
+  <details>
+    <summary>Vızz sivrisinekleri kovar mı?</summary>
+    <p>Hayır. Ses yayarak sivrisinek kovan uygulamaların işe yaradığına dair bilimsel bir kanıt yok. Vızz ses yaymaz, sadece dinler. Korunma için uygulamadaki "Korunma" sekmesine bak.</p>
+  </details>
+
+  <details>
+    <summary>Aboneliği nasıl iptal ederim?</summary>
+    <p>Ayarlar → [adın] → Abonelikler → Vızz Plus → Aboneliği İptal Et. Uygulamadaki Profil ekranından da yönetebilirsin. Ücretsiz deneme bitmeden en az 24 saat önce iptal edersen ücret alınmaz.</p>
+  </details>
+
+  <details>
+    <summary>Telefonumu değiştirdim, aboneliğim görünmüyor</summary>
+    <p>Aynı Apple Kimliği ile giriş yaptığından emin ol, sonra Profil ekranındaki "Satın alımları geri yükle"ye dokun.</p>
+  </details>
+
+  <h2>İletişim</h2>
+  <p>Hata bildirimi, öneri ya da soruların için <a href="https://github.com/vibapps/vizz/issues">destek sayfasında</a> yeni bir kayıt aç.</p>
+
+  <footer class="muted">
+    <a href="gizlilik.html">Gizlilik politikası</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Kullanım koşulları</a><br>
+    © 2026 Volkan İlkay Bedel
+  </footer>
+</main>
+</body>
+</html>
